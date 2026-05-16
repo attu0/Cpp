@@ -17,13 +17,17 @@ using namespace std;
 //sol 
 // 4 lines outter will run for 4 times
 // inner loop will run for 4 times to print 4 stars in each line
-
-int main(){
-    for(int i=0;i<4;i++){
-        for(int j=0;j<4;j++){
+void print1(int n){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
             cout<<"*";
         }
         cout<<endl;
     }
-    return 0;
+}
+
+int main(){
+    int n;
+    cin>>n;
+    print1(n);
 }
